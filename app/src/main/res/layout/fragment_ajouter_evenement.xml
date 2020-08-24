@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bgm2"
+    tools:context=".Controllers.AjouterEvenement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/log" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/fab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Upload" />
+
+                <Button
+                    android:id="@+id/fabUpload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="SAve" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/camp_nom"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Name of the offer :" />
+
+            <EditText
+                android:id="@+id/camp_desc"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Description :" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="type:"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/cat"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <EditText
+
+                android:id="@+id/camp_lieu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Location :" />
+
+            <EditText
+
+                android:id="@+id/camp_distanse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Surface :" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="S+ ? :" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <SeekBar
+                    android:id="@+id/slider"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:clickable="true"
+                    android:max="10"
+                    android:outlineAmbientShadowColor="#090808" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/diffV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="/ 10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+
+                android:id="@+id/camp_prix"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Price :" />
+
+            <EditText
+
+                android:id="@+id/camp_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Infoline:" />
+
+            <EditText
+
+                android:id="@+id/dateDebut"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Available Date" />
+
+            <EditText
+
+                android:id="@+id/dateFin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Unvailable Date" />
+
+            <Button
+
+                android:id="@+id/addE"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Add Offre" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

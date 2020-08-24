@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.AjouterArticle"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:padding="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/log"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="2">
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/fab"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Upload"/>
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/fabUpload"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="enreg"/>
+        </LinearLayout>
+
+    <EditText
+
+        android:hint="Nom article:"
+        android:id="@+id/nomA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+
+        android:hint="Description article:"
+        android:id="@+id/descA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+
+        android:hint="Lieu article:"
+        android:id="@+id/lieuA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"/>
+    <EditText
+
+        android:hint="Prix article:"
+        android:id="@+id/prixA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <Switch
+            android:id="@+id/vendre"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="A vendre"
+
+            android:textOff="off"
+            android:textOn="on" />
+        <Switch
+            android:id="@+id/louer"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="A louer"
+
+
+            android:textOff="off"
+            android:textOn="on" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/addE"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Ajouter Article"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
