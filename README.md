@@ -1,2 +1,2 @@
 # Corental
-![Image of Yaktocat](https://i.postimg.cc/htRdWL88/repository-open-graph-template.png)
+![Image1](https://i.postimg.cc/9fjdWNkJ/6.png)
